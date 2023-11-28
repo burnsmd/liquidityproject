@@ -17,7 +17,8 @@ def load_and_prepare_data(csv_file):
     return data
 
 # Load and prepare the data
-osmosis_data = load_and_prepare_data('osmosis.csv')
+file_path = r'https://raw.githubusercontent.com/burnsmd/liquidityproject/main/osmosis.csv'
+osmosis_data = load_and_prepare_data(file_path)
 latest_date = osmosis_data['BLOCK_DATE'].max()
 
 # Define time periods
